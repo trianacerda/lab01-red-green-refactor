@@ -15,6 +15,6 @@ describe('copyAndPush', () => {
       randomNumber,
     ]);
     expect(numbersArr).toEqual([1, 2, 3]);
-    console.log('hi', numbersArr);
+    console.log('!!!!!!!!!', numbersArr);
   });
 });
