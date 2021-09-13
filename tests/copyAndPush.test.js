@@ -1,4 +1,4 @@
-// import
+import copyAndPush from '../functions/copyAndPush.js';
 
 describe('copyAndPush', () => {
   it('makes copy of array and adds to the end of it', () => {
