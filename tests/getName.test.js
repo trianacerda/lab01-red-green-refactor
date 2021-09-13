@@ -1,4 +1,4 @@
-import getName from './getName';
+import getName from '../functions/getName.js';
 
 describe('getName', () => {
   it('returns name of the property in obj', () => {
