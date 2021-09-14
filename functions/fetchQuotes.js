@@ -1,13 +1,16 @@
-// import fetch from 'node-fetch';
+import fetch from 'node-fetch';
 
-// const fetchQuotes = async () => {
-//   const URL = 'https://futuramaapi.herokuapp.com/api/characters/bender';
-//   const response = await fetch(URL);
-//   const data = response.json();
+const fetchQuotes = async () => {
+  const URL = 'https://futuramaapi.herokuapp.com/api/quotes';
+  const response = await fetch(URL);
+  const data = await response.json();
+  const formattedData = {
+    name: data[0].character,
+    text: data[0].quote,
+    image: data[0].image,
+  };
 
-//   await console.log('!!!!!!!', data);
+  return formattedData;
+};
 
-//   return data[0].map((character) => character.quote);
-// };
-
-// export default fetchQuotes;
+export default fetchQuotes;
